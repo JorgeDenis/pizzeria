@@ -1,0 +1,54 @@
+//tipo de letras
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Playfair+Display&family=Raleway&display=swap');
+//tipografía Colossus Pizza
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,500;1,300&family=Lilita+One&display=swap');
+
+// $ff-1: 'Bebas Neue', sans-serif;
+// $ff-2: 'Nunito', sans-serif;
+// $ff-3: 'Roboto', sans-serif;
+
+$ff-1: 'Playfair Display', serif;
+$ff-2: 'Raleway', sans-serif;
+$ff-3: 'Open Sans', sans-serif;
+
+
+$ff1: 'Lilita One', cursive;
+$ff2: 'Fira Sans Condensed', sans-serif;
+$ff3: 'Open Sans', sans-serif;
+
+// paleta de colores
+$color-1: #19d3da;
+$color-2: #373a40;
+$color-3: #686d76;
+$color-4: #eeeeee;
+
+// paleta de colores pizzeria
+$color1: #d8d8d8;
+$color2: #F27405;
+$color3: #F2561D;
+$color4: #F20505;
+$color5: #1f1f1f;
+$color6: #303030;
+
+
+
+//breakpoints
+$extraSmall: '200px';
+$small: '600px';
+$medium: '960px';
+$large: '1246px';
+$extraLarge: '1904px';
+
+
+@mixin desde ($size){
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+
+@mixin hasta ($size){
+    @media screen and (max-width: $size){
+        @content;
+    }
+}
